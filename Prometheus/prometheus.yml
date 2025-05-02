@@ -19,11 +19,11 @@ scrape_configs:
       - targets: ["legendary-space-winner-pj499pjw5p9369qq-9090.app.github.dev"]     # The target here it's Prometheus itself.
 
 
-  # - job_name: "bikeshare-app"
-  #   metrics_path: '/metrics'
-  #   scheme: 'http'
-  #   scrape_interval: 10s       # override default value
-  #   scrape_timeout: 10s       # override default value
-  #   static_configs:
-  #     - targets: ["3.110.28.230:8080"]     # The target here it's Prometheus itself.
+  - job_name: "patient-survival-app"
+    metrics_path: '/metrics'
+    scheme: 'http'
+    scrape_interval: 10s       # override default value
+    scrape_timeout: 10s       # override default value
+    static_configs:
+      - targets: ["legendary-space-winner-pj499pjw5p9369qq-8000.app.github.dev"]     # The target here it's Prometheus itself.
 
